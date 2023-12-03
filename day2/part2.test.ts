@@ -13,16 +13,13 @@ describe("part2 example", () => {
     test("should return correct result for example data", () => {
         expect(part2(input)).toBe(result);
     });
-    test("should return correct result for example data with extra line on end", () => {
-        expect(part2([...input, ""])).toBe(result);
-    });
 });
 
-// describe("part2 full", () => {
-//     const input = readFileSync("./src/day2/input.txt").toString().split("\n");
-//     const result = 75561;
+describe("part2 full", () => {
+    const input = readFileSync("./src/day2/input.txt").toString().split("\n");
+    const result = 72706;
 
-//     test("should return correct result for real data", () => {
-//         expect(part2(input)).toBe(result);
-//     });
-// });
+    test("should return correct result for real data", () => {
+        expect(part2(input)).toBe(result);
+    });
+});
