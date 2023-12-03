@@ -3,9 +3,18 @@ import { part1, part2 } from "./day3";
 
 describe("part1 example", () => {
     const input = [
-        ""
+        "467..114..",
+        "...*......",
+        "..35..633.",
+        "......#...",
+        "617*......",
+        ".....+.58.",
+        "..592.....",
+        "......755.",
+        "...$.*....",
+        ".664.598..",
     ];
-    const expectedResult = 0;
+    const expectedResult = 4361;
     test("should return correct result for example data", () => {
         expect(part1(input)).toBe(expectedResult);
     });
