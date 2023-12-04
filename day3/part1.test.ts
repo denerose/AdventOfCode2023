@@ -1,5 +1,5 @@
 import { readFileSync } from "fs";
-import { part1 } from "./part1";
+import { part1, partNumbers } from "./part1";
 
 describe("part1 example", () => {
     const input = [
