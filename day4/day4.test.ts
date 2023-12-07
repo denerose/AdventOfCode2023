@@ -112,18 +112,18 @@ describe("part2 example", () => {
 //     });
 // });
 
-// describe("part2 full", () => {
-//     const input = readFileSync("./src/day4/input.txt").toString().split("\n");
-//     const result = 0;
-//     const knownBadResults = [0, 674, 1137];
-//     const part1FullOutput = part2(input);
+describe("part2 full", () => {
+    const input = readFileSync("./src/day4/input.txt").toString().split("\n");
+    const result = 14427616;
+    const knownBadResults = [0];
+    const part1FullOutput = part2(input);
 
-//     // test("should return correct result for real data", () => {
-//     //     expect(part2(input)).toBe(result);
-//     // });
+    test("should return correct result for real data", () => {
+        expect(part2(input)).toBe(result);
+    });
 
 
-//     test("the result should not be any of the known bad results", () => {
-//         expect(knownBadResults.includes(part1FullOutput)).toBe(false);
-//     });
-// });
+    test("the result should not be any of the known bad results", () => {
+        expect(knownBadResults.includes(part1FullOutput)).toBe(false);
+    });
+});
